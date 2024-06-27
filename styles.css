@@ -1,0 +1,233 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+header {
+    background: url('images/background site.webp') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    height: 700px;
+    position: relative;
+}
+
+.header-content {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Bandeau semi-transparent */
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 2em;
+    line-height: 1.2;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        background-size: contain; /* Ajustement pour mobile */
+        height: auto;
+        min-height: 300px; /* Hauteur minimale */
+    }
+
+    .header-content {
+        background: rgba(0, 0, 0, 0.7); /* Assombrissement pour meilleure lisibilité */
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Taille de police réduite pour mobile */
+    }
+}
+
+#intro {
+    padding: 20px 0;
+    background: #ffffff;
+    text-align: center;
+    border-top: 2px solid #008080; /* Bleu canard */
+}
+
+#intro h2 {
+    font-size: 2em;
+    color: #008080; /* Bleu canard */
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#packs {
+    padding: 40px 0;
+    background: #f8f8f8;
+    text-align: center;
+    border-top: 2px solid #008080; /* Bleu canard */
+}
+
+.packs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacement égal entre les packs */
+}
+
+.pack {
+    background: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%; /* Prend toute la largeur en version mobile */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-top: 5px solid #008080; /* Bleu canard */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none; /* Suppression de la décoration de lien */
+    color: inherit; /* Conserver la couleur du texte */
+}
+
+@media (min-width: 768px) {
+    .pack {
+        width: calc(50% - 20px); /* Deux packs par ligne */
+    }
+}
+
+@media (min-width: 1024px) {
+    .pack {
+        width: calc(33.33% - 20px); /* Trois packs par ligne */
+    }
+}
+
+.pack img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.pack h3 {
+    font-size: 1.5em;
+    color: #008080; /* Bleu canard */
+    margin: 10px 0;
+}
+
+.pack p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.pack:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#need-help {
+    padding: 40px 0;
+    background: #ffffff;
+    text-align: center;
+    border-top: 2px solid #008080; /* Bleu canard */
+}
+
+#need-help h2 {
+    font-size: 2em;
+    color: #008080; /* Bleu canard */
+    margin-bottom: 20px;
+}
+
+#need-help p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#expertise {
+    padding: 40px 0;
+    background: #f8f8f8;
+    text-align: center;
+    border-top: 2px solid #008080; /* Bleu canard */
+}
+
+#expertise h2 {
+    font-size: 2em;
+    color: #008080; /* Bleu canard */
+    margin-bottom: 20px;
+}
+
+#expertise p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact {
+    padding: 40px 0;
+    background: #ffffff;
+    text-align: center;
+    border-top: 2px solid #008080; /* Bleu canard */
+}
+
+#contact h2 {
+    font-size: 2em;
+    color: #008080; /* Bleu canard */
+    margin-bottom: 20px;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    max-width: 300px;
+}
+
+.contact-option img {
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contact-option p {
+    font-size: 1em;
+    color: #333;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #008080; /* Bleu canard */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
